@@ -1,4 +1,4 @@
-<addon id="skin.quartz.ce" version="5.3.2" name="Quartz 5 CE" provider-name="nonJon">
+<addon id="skin.quartz.ce" version="5.4" name="Quartz 5 CE" provider-name="nonJon">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
     <import addon="script.favourites" version="4.0.4"/>
@@ -9,7 +9,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">Quartz 5 Classic Edition for Jarvis</summary>
+    <summary lang="en">Quartz 5 Classic Edition for Jarvis and Older Versions of Kodi</summary>
     <description lang="en">Easy to use, fast and flexible user interface. If you believe that sometimes less means more, you might feel right at home with Quartz. Skin graphics by CloudDweller and Pecinko.</description>
   </extension>
 </addon>

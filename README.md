@@ -1,6 +1,5 @@
 # quartz
 
-Quartz skin for KODI - original project.
+Quartz skin for KODI 
 
-This project is no longer being maintained by me. 
-Take a look at some of the forks for further developement.
+https://forum.kodi.tv/showthread.php?tid=264544
