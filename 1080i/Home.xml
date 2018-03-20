@@ -129,7 +129,7 @@
       <control type="list" id="302" description="TVShows">
    
 
-     <visible>!Skin.HasSetting(TVSectionHide | System.GetBool(pvrmanager.enabled))</visible>
+     <visible>!Skin.HasSetting(TVSectionHide) | System.GetBool(pvrmanager.enabled)</visible>
         <onleft>301</onleft>
         <onright>303</onright>
         <onup>312</onup>

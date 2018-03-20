@@ -11,7 +11,8 @@
       <control type="group" description="50 fatList">
         <visible>Control.IsVisible(50)</visible>
         <include>DefaultSquareThumbs</include>
-        <include>MusicInfo</include>
+	
+		<include>MusicInfo</include>
         <control type="group" description="Slider and List">
           <include>LargeListItemCount</include>
           <posx>1020</posx>

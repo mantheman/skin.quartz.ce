@@ -5,6 +5,7 @@
     <posx>0</posx>
     <posy>0</posy>
   </coordinates>
+  <include>FullBackground</include>
   <controls>
     <include>FullBackground</include>
     <include>MediaHeader</include>
