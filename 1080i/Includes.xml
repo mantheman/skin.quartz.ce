@@ -38,7 +38,7 @@
       <height>100%</height>
       <aspectratio>scale</aspectratio>
       <fadetime>400</fadetime>
-      <texture background="true">$INFO[ListItem.Thumb]</texture>
+      <texture background="true" fallback="img/BlackDot.png">$INFO[ListItem.Thumb]</texture>
     </control>
     <control type="image" description="Fanart">
       <visible>![Window.IsActive(MyPics.xml) + !Container.Content(addons)]</visible>

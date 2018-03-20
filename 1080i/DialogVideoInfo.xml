@@ -488,7 +488,8 @@
           <align>center</align>
           <textcolor>Silver</textcolor>
           <font>size22B</font>
-          <label>$INFO[Container(50).ListItem.Label]</label>
+          <label>$INFO[Container(50).ListItem.Label][CR]$INFO[Container(50).ListItem.Label2]</label> 
+
         </control>
       </control>
       <control type="image" description="Navbar">

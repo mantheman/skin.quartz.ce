@@ -7,7 +7,8 @@
       <include>OpenClose</include>
       <control type="label" id="2" description="Header label">
         <include>Heading</include>
-        <label>21432</label>
+        <!-- <label>21432</label>  -->
+		<label>-</label>
       </control>
       <control type="group">
         <posx>390</posx>

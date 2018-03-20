@@ -23,6 +23,7 @@
         <width>1050</width>
         <font>size24B</font>
         <align>center</align>
+		<label>-</label>
       </control>
       <control type="grouplist" id="5" description="Control Area">
         <posx>135</posx>
@@ -59,6 +60,13 @@
       </control>
       <control type="sliderex" id="13">
         <description>Default Slider</description>
+        <texturenofocus>-</texturenofocus>
+        <align>left</align>
+        <font>size20</font>
+        <height>60</height>
+      </control>
+	    <control type="label" id="14">
+        <description>Default RadioButton</description>
         <texturenofocus>-</texturenofocus>
         <align>left</align>
         <font>size20</font>
