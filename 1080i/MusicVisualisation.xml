@@ -142,7 +142,7 @@
                 <posy>3</posy>
                 <width>675</width>
                 <height>24</height>
-                <texturebg>Controls/ProgressBackground.png</texturebg>
+               <!-- <texturebg>Controls/ProgressBackground.png</texturebg> -->
                 <info>Player.Progress</info>
               </control>
               <control type="label">
@@ -256,7 +256,7 @@
               <posy>3</posy>
               <width>675</width>
               <height>24</height>
-              <texturebg>Controls/ProgressBackground.png</texturebg>
+            <!--  <texturebg>Controls/ProgressBackground.png</texturebg> -->
               <info>Player.Progress</info>
             </control>
             <control type="label">
