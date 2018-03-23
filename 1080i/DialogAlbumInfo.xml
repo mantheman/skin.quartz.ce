@@ -173,6 +173,8 @@
           <texturefocus>img/HomeBarFO.png</texturefocus>
           <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
         </control>
+		
+		<!--
         <control type="button" id="11" description="Last FM">
           <height>60</height>
           <width>330</width>
@@ -180,7 +182,7 @@
           <font>size18</font>
           <texturefocus>img/HomeBarFO.png</texturefocus>
           <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
-        </control>
+        </control>  -->
         <control type="button" id="12" description="Get FanArt">
           <height>60</height>
           <width>330</width>
