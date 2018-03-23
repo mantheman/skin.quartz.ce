@@ -10,7 +10,17 @@
       <posy>0</posy>
       <control type="group" description="50 fatList">
         <visible>Control.IsVisible(50)</visible>
-        <include>DefaultSquareThumbs</include>
+        <control type="image" description="Thumb">
+          <posx>180</posx>
+          <posy>100</posy> <!-- was 240 nonjon -->
+          <width>621</width>
+          <height>720</height>
+          <include>Icon_Fade</include>
+          <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Thumb]</texture>
+          <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+          <bordersize>9</bordersize>
+          <aspectratio aligny="top">keep</aspectratio>
+        </control>
 	
 		<include>MusicInfo</include>
         <control type="group" description="Slider and List">

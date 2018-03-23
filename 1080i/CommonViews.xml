@@ -105,7 +105,7 @@
   <include name="DefaultSquareThumbs">
     <control type="image" description="Thumb">
       <posx>180</posx>
-      <posy>100</posy> <!-- was 240 nonjon -->
+      <posy>300</posy> <!-- was 240 nonjon -->
       <width>621</width>
       <height>720</height>
       <include>Icon_Fade</include>
