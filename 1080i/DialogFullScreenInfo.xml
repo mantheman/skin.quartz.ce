@@ -94,7 +94,7 @@
             <label>$INFO[VideoPlayer.Album]</label>
           </control>
           <control type="label" description="Label 2">
-            <visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV)</visible>
+            <visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(Episodes)</visible>
             <font>size17</font>
             <include>FullscreenInfoLabel2</include>
             <label>$LOCALIZE[21396]$INFO[Player.Chapter, : ]$INFO[Player.ChapterCount, / ]</label>
@@ -105,21 +105,28 @@
             <include>FullscreenInfoLabel2</include>
             <label>$INFO[VideoPlayer.TVShowTitle] - $LOCALIZE[20373] $INFO[VideoPlayer.Season], $LOCALIZE[20359] $INFO[VideoPlayer.Episode]</label>
           </control>
+	  	  <control type="label" description="channel">
+		    <visible>VideoPlayer.Content(LiveTV)</visible>
+            <font>size17</font>
+			<include>FullscreenInfoLabel2</include>
+            <label>$LOCALIZE[19031]: $INFO[VideoPlayer.NextTitle,  ]</label>
+          </control>
+		  <!--
           <control type="label" description="Label 2">
             <visible>VideoPlayer.Content(LiveTV)</visible>
             <font>size17</font>
             <include>FullscreenInfoLabel2</include>
             <label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31509]: ]</label>
-          </control>
+          </control>  -->
           <control type="textbox">
             <posx>300</posx>
-            <posy>105</posy>
+            <posy>104</posy>
             <width>1275</width>
-            <height>129</height>
+            <height>140</height>
             <label>$INFO[VideoPlayer.Plot]</label>
-            <align>jistify</align>
-            <autoscroll>false</autoscroll>
-            <font>size20</font>
+            <align>justify</align>
+            <!--<autoscroll>false</autoscroll>-->
+            <font>size19</font>
           </control>
         </control>
         <control type="grouplist">
@@ -142,7 +149,7 @@
             <texture>$INFO[VideoPlayer.VideoResolution,badges/video/,.png]</texture>
           </control>
           <control type="image">
-            <visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
+            <visible>!String.IsEmpty(VideoPlayer.VideoCodec)</visible>
             <height>45</height>
             <width>90</width>
             <bordersize>3</bordersize>
@@ -161,7 +168,7 @@
           <align>right</align>
           <aligny>bottom</aligny>
           <control type="image">
-            <visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
+            <visible>!String.IsEmpty(VideoPlayer.AudioChannels)</visible>
             <height>45</height>
             <width>90</width>
             <bordersize>3</bordersize>
@@ -170,7 +177,7 @@
             <texture>$INFO[VideoPlayer.AudioChannels,badges/channels,.png]</texture>
           </control>
           <control type="image">
-            <visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+            <visible>!String.IsEmpty(VideoPlayer.AudioCodec)</visible>
             <height>45</height>
             <width>90</width>
             <bordersize>3</bordersize>
