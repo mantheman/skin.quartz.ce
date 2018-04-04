@@ -421,7 +421,8 @@
 
  <item id="0" description="Reload Skin">
 <visible>!Skin.HasSetting(XBMC5)</visible>
-<label>31972</label>
+<label>Reload Skin</label>
+<!--<label>31972</label>-->
 <onclick>XBMC.ReloadSkin()</onclick>
 </item>
 
@@ -477,8 +478,8 @@
             <onclick>ActivateWindow(1112)</onclick>
           </item>
           <item id="10" description="Quit">
-            <visible>!Skin.HasSetting(XBMC4) + IsEmpty(Skin.String(shutdown))</visible>
-            <label fallback="13009">$VAR[QuitLabel2]</label>
+            <visible>!Skin.HasSetting(XBMC4) + StringCompare(Skin.String(shutdown),)</visible>
+            <label>13009</label>
             <onclick>ActivateWindow(shutdownmenu)</onclick>
           </item>
           <item id="11" description="Quit">
