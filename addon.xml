@@ -2,6 +2,8 @@
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
     <import addon="script.favourites" version="6.0.3"/>
+    <import addon="script.skin.helper.skinbackup" version="1.0.12"/>
+
   </requires>
   <extension
     point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false">
