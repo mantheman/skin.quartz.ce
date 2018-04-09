@@ -222,6 +222,22 @@
           <label>$LOCALIZE[31128]</label>
           <onclick>ActivateWindow(1117)</onclick>
         </control>
+        <control type="radiobutton" id="3402" description="Use custom BG">
+		  <visible>!Skin.HasSetting(HideFanart)</visible>
+          <include>SkinSettingsButton</include>
+		  <label>$LOCALIZE[31154]</label>
+		  <onclick>Skin.ToggleSetting(UseCustomBackground)</onclick>
+		  <selected>Skin.HasSetting(UseCustomBackground)</selected>
+		  <radioposx>1210</radioposx>
+        </control>
+        <control type="button" id="3403" description="Custom BG path">
+		  <visible>Skin.HasSetting(UseCustomBackground) + !Skin.HasSetting(HideFanart)</visible>
+          <include>SkinSettingsButton</include>
+          <label>  - $LOCALIZE[31156]</label>
+		  <label2>[COLOR=selected]$INFO[Skin.String(CustomBackgroundPath)][/COLOR]</label2>
+		  <onclick>Skin.SetImage(CustomBackgroundPath)</onclick>
+		  <enable>Skin.HasSetting(UseCustomBackground)</enable>
+        </control>
 
       </control>
 	  
@@ -249,19 +265,14 @@
         <control type="button" id="3502" description="Backup Skin">
           <include>SkinSettingsButton</include>
           <label>$LOCALIZE[31134]</label>
-		  <onclick>skin.setstring(Dialog_Header,$LOCALIZE[31152])</onclick>
-		  <onclick>skin.setstring(Dialog_Text,$LOCALIZE[31153])</onclick>
-		  <onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">ActivateWindow(1166)</onclick>
-		  <onclick>skin.setstring(Dialog_Header,TEST)</onclick>
-          <onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=backup)</onclick>
+						<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
+						<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=backup)</onclick>
         </control>
         <control type="button" id="3503" description="Restore Skin">
           <include>SkinSettingsButton</include>
           <label>$LOCALIZE[31136]</label>
-		  <onclick>skin.setstring(Dialog_Header,$LOCALIZE[31152])</onclick>
-		  <onclick>skin.setstring(Dialog_Text,$LOCALIZE[31153])</onclick>
-		  <onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">ActivateWindow(1166)</onclick>
-          <onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup)</onclick>
+						<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
+						<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup)</onclick>
         </control>
         <control type="button" id="3504" description="Reset Skin">
           <include>SkinSettingsButton</include>
