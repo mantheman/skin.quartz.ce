@@ -98,21 +98,21 @@
           <label>294</label>
           <width>375</width>
 		  <align>center</align>
-          <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
+          <texturenofocus border="8">img/ListNF.png</texturenofocus>
         </control>
         <control type="button" id="3">
           <description>Clear Bookmark button</description>
           <label>296</label>
           <width>375</width>
 		  <align>center</align>
-          <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
+          <texturenofocus border="8">img/ListNF.png</texturenofocus>
         </control>
         <control type="button" id="4">
           <description>Clear Bookmark button</description>
           <label>20406</label>
           <width>375</width>
 		  <align>center</align>
-          <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
+          <texturenofocus border="8">img/ListNF.png</texturenofocus>
           <visible>videoplayer.content(episodes)</visible>
         </control>
       </control>
