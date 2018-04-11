@@ -76,14 +76,14 @@
   <string id="31121">Hide background art</string>  
   <string id="31122">Do not display artwork in the background of various views (not recommended).</string>
   <string id="31123">Background art visibility</string>
-  <string id="31124">Adjust the visibility of background art.  Enter a number from 1 to 10.  Ten is the brightest.  Default = 4</string>
+  <string id="31124">Adjust the visibility of background art.  Enter a number from 1 to 10.  Ten is the brightest (default=4).</string>
   <string id="31125"></string>
   <string id="31126">Home menus customizer</string>  
   <string id="31127">Customize Home menu categories and the available menus under each.</string> 
   <string id="31128">Home media shelf customizer</string>
   <string id="31129">Manage options for displaying content above the Home menu.</string>  
   <string id="31130">Enable onscreen debug info</string>  
-  <string id="31131">When enabled, the current KODI module and focus object will be displayed. Useful for troubleshooting.</string>
+  <string id="31131">While enabled, the current KODI module and focus object will be displayed. Useful for troubleshooting.</string>
   <string id="31132">Enable debug logging</string>
   <string id="31133">Turn debug logging on or off. Useful for troubleshooting.</string>
   <string id="31134">Backup skin settings</string>

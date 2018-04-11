@@ -49,6 +49,7 @@
         <align>left</align>
         <font>size20</font>
         <height>60</height>
+		<radioposx>780</radioposx>
       </control>
       <control type="spincontrolex" id="9">
         <description>Default spincontrolex</description>
@@ -71,6 +72,7 @@
         <align>left</align>
         <font>size20</font>
         <height>60</height>
+		<radioposx>780</radioposx>
       </control>
     </control>
   </controls>
