@@ -133,12 +133,12 @@
           <font>size22</font>
           <label>24054</label>
         </control>
-        <control type="button" id="11" description="rollback">
+        <control type="button" id="12" description="rollback">
           <height>66</height>
           <width>270</width>
           <align>center</align>
           <font>size22</font>
-          <label>$LOCALIZE[24048]</label>
+          <label>$LOCALIZE[518]</label>
         </control>
       </control>
     </control>
