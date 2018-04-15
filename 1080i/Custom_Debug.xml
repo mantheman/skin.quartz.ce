@@ -50,6 +50,11 @@
 				</control>
 				<control type="label">
 					<textcolor>red</textcolor>
+					<label>MusicVisualisation.xml</label>
+					<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
+				</control>
+				<control type="label">
+					<textcolor>red</textcolor>
 					<label>MyMusicNav.xml</label>
 					<visible>Window.IsVisible(MyMusicNav.xml)</visible>
 				</control>

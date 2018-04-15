@@ -28,44 +28,44 @@
         <posy>93r</posy>
         <control type="button" id="1">
           <description>Repeat</description>
-          <posx>0</posx>
+          <posx>900</posx>
           <posy>3</posy>
           <width>90</width>
           <height>98</height>
           <label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
           <font>-</font>
-          <onleft>11</onleft>
-          <onright>600</onright>
+          <onleft>609</onleft>
+          <onright>21</onright>
           <onup>609</onup>
           <ondown>609</ondown>
-          <texturefocus colordiffuse="HL">MusicOSD/OSDRepeatNF.png</texturefocus>
-          <texturenofocus>MusicOSD/OSDRepeatNF.png</texturenofocus>
+          <texturefocus colordiffuse="HL">MusicOSD/OSDRepeat.png</texturefocus>
+          <texturenofocus>MusicOSD/OSDRepeat.png</texturenofocus>
           <onclick>XBMC.PlayerControl(Repeat)</onclick>
         </control>
         <control type="image" id="4">
-          <posx>0</posx>
+          <posx>900</posx>
           <posy>3</posy>
           <width>90</width>
           <height>98</height>
-          <texture>MusicOSD/OSDRepeatOneNF.png</texture>
+          <texture>MusicOSD/OSDRepeatOne.png</texture>
           <visible>Playlist.IsRepeatOne</visible>
           <visible>!Control.HasFocus(1)</visible>
         </control>
         <control type="image" id="5">
-          <posx>0</posx>
+          <posx>900</posx>
           <posy>3</posy>
           <width>90</width>
           <height>98</height>
-          <texture colordiffuse="HL">MusicOSD/OSDRepeatOneNF.png</texture>
+          <texture colordiffuse="HL">MusicOSD/OSDRepeatOne.png</texture>
           <visible>Playlist.IsRepeatOne</visible>
           <visible>Control.HasFocus(1)</visible>
         </control>
         <control type="image" id="6">
-          <posx>0</posx>
+          <posx>900</posx>
           <posy>3</posy>
           <width>90</width>
           <height>98</height>
-          <texture>MusicOSD/OSDRepeatAllNF.png</texture>
+          <texture>MusicOSD/OSDRepeatAll.png</texture>
           <visible>Playlist.IsRepeat</visible>
           <visible>!Control.HasFocus(1)</visible>
         </control>
@@ -74,7 +74,7 @@
           <posy>3</posy>
           <width>90</width>
           <height>98</height>
-          <texture colordiffuse="HL">MusicOSD/OSDRepeatAllNF.png</texture>
+          <texture colordiffuse="HL">MusicOSD/OSDRepeatAll.png</texture>
           <visible>Playlist.IsRepeat</visible>
           <visible>Control.HasFocus(1)</visible>
         </control>
@@ -101,9 +101,9 @@
           <height>98</height>
           <label>210</label>
           <font>-</font>
-          <texturefocus colordiffuse="HL">MusicOSD/OSDPreviousNF.png</texturefocus>
-          <texturenofocus>MusicOSD/OSDPreviousNF.png</texturenofocus>
-          <onleft>1</onleft>
+          <texturefocus colordiffuse="HL">MusicOSD/OSDPrevious.png</texturefocus>
+          <texturenofocus>MusicOSD/OSDPrevious.png</texturenofocus>
+          <onleft>603</onleft>
           <onright>602</onright>
           <onup>609</onup>
           <ondown>609</ondown>
@@ -117,64 +117,64 @@
           <label>31351</label>
           <altlabel>208</altlabel>
           <font>-</font>
-          <texturefocus colordiffuse="HL">MusicOSD/OSDPauseNF.png</texturefocus>
-          <texturenofocus>MusicOSD/OSDPauseNF.png</texturenofocus>
+          <texturefocus colordiffuse="HL">MusicOSD/OSDPause.png</texturefocus>
+          <texturenofocus>MusicOSD/OSDPause.png</texturenofocus>
           <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-          <alttexturefocus colordiffuse="HL">MusicOSD/OSDPlayNF.png</alttexturefocus>
-          <alttexturenofocus>MusicOSD/OSDPlayNF.png</alttexturenofocus>
+          <alttexturefocus colordiffuse="HL">MusicOSD/OSDPlay.png</alttexturefocus>
+          <alttexturenofocus>MusicOSD/OSDPlay.png</alttexturenofocus>
           <onleft>600</onleft>
-          <onright>603</onright>
+          <onright>605</onright>
           <onup>609</onup>
           <ondown>609</ondown>
           <onclick>PlayerControl(Play)</onclick>
         </control>
         <control type="button" id="603">
-          <posx>225</posx>
+          <posx>0</posx>
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
           <label>31352</label>
           <font>-</font>
-          <texturefocus colordiffuse="HL">MusicOSD/OSDStopNF.png</texturefocus>
-          <texturenofocus>MusicOSD/OSDStopNF.png</texturenofocus>
-          <onleft>602</onleft>
-          <onright>605</onright>
+          <texturefocus colordiffuse="HL">MusicOSD/OSDStop.png</texturefocus>
+          <texturenofocus>MusicOSD/OSDStop.png</texturenofocus>
+          <onleft>21</onleft>
+          <onright>600</onright>
           <onup>609</onup>
           <ondown>609</ondown>
           <onclick>PlayerControl(Stop)</onclick>
         </control>
         <control type="button" id="605">
-          <posx>300</posx>
+          <posx>225</posx>
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
           <label>209</label>
           <font>-</font>
-          <texturefocus colordiffuse="HL">MusicOSD/OSDNextNF.png</texturefocus>
-          <texturenofocus>MusicOSD/OSDNextNF.png</texturenofocus>
-          <onleft>603</onleft>
-          <onright>21</onright>
+          <texturefocus colordiffuse="HL">MusicOSD/OSDNext.png</texturefocus>
+          <texturenofocus>MusicOSD/OSDNext.png</texturenofocus>
+          <onleft>602</onleft>
+          <onright>609</onright>
           <onup>609</onup>
           <ondown>609</ondown>
           <onclick>PlayerControl(Next)</onclick>
         </control>
         <control type="togglebutton" id="21" description="Random">
-          <posx>375</posx>
+          <posx>1000</posx>
           <posy>1</posy>
           <width>90</width>
           <height>98</height>
           <label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
           <altlabel>$LOCALIZE[590] : $LOCALIZE[16041]</altlabel>
           <font>-</font>
-          <onleft>605</onleft>
-          <onright>609</onright>
+          <onleft>1</onleft>
+          <onright>603</onright>
           <onup>609</onup>
           <ondown>609</ondown>
-          <texturefocus colordiffuse="HL">MusicOSD/OSDRandomOffNF.png</texturefocus>
-          <texturenofocus>MusicOSD/OSDRandomOffNF.png</texturenofocus>
+          <texturefocus colordiffuse="HL">MusicOSD/OSDRandomOff.png</texturefocus>
+          <texturenofocus>MusicOSD/OSDRandomOff.png</texturenofocus>
           <usealttexture>Playlist.IsRandom</usealttexture>
-          <alttexturefocus colordiffuse="HL">MusicOSD/OSDRandomOnNF.png</alttexturefocus>
-          <alttexturenofocus>MusicOSD/OSDRandomOnNF.png</alttexturenofocus>
+          <alttexturefocus colordiffuse="HL">MusicOSD/OSDRandomOn.png</alttexturefocus>
+          <alttexturenofocus>MusicOSD/OSDRandomOn.png</alttexturenofocus>
           <onclick>XBMC.PlayerControl(Random)</onclick>
         </control>
         <!-- <control type="button" id="604">
@@ -195,18 +195,20 @@
         </control>-->
         <control type="button" id="609">
           <description>Options</description>
-          <posx>1050</posx>
-          <posy>3</posy>
+          <posx>300</posx>
+          <posy>18</posy>
           <width>90</width>
-          <height>98</height>
+          <height>58</height>
           <label>$LOCALIZE[33063]</label>
           <font>-</font>
-          <onleft>21</onleft>
-          <onright>10</onright>
+          <onleft>605</onleft>
+          <onright>1</onright>
           <onup>602</onup>
           <ondown>602</ondown>
-          <texturefocus colordiffuse="HL">MusicOSD/OSDOptionsNF.png</texturefocus>
-          <texturenofocus>MusicOSD/OSDOptionsNF.png</texturenofocus>
+		  <aspectratio>keep</aspectratio>
+
+          <texturefocus colordiffuse="HL">MusicOSD/OSDOptions.png</texturefocus>
+          <texturenofocus>MusicOSD/OSDOptions.png</texturenofocus>
           <onclick allowhiddenfocus="true">Control.SetFocus(555)</onclick>
           <!--<onclick>ActivateWindow(1113)</onclick>-->
         </control>

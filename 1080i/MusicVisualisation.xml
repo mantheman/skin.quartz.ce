@@ -10,7 +10,8 @@
         <height>1080</height>
       </control>
       <control type="image" description="FA">
-        <visible>Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+        <!--<visible>Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>-->
+        <visible>Skin.HasSetting(MusicPlayingFanart)</visible>
         <posx>0</posx>
         <posy>0</posy>
         <width>1920</width>
@@ -18,8 +19,8 @@
         <texture>$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
         <animation effect="fade" time="0" end="70" condition="True">Conditional</animation>
       </control>
-			<control type="multiimage" description="Slideshow">
-        <visible>Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+	  <control type="multiimage" description="Slideshow">
+        <visible>false + Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
         <posx>0</posx>
         <posy>0</posy>
         <width>1920</width>
