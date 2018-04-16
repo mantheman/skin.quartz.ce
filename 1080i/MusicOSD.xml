@@ -22,62 +22,85 @@
     <control type="group">
       <posx>120</posx>
       <posy>758</posy>
-      <!--101-->
       <control type="group" id="101">
         <posx>608</posx>
         <posy>93r</posy>
         <control type="button" id="1">
           <description>Repeat</description>
-          <posx>900</posx>
-          <posy>3</posy>
+          <posx>-800</posx>
+          <posy>-15</posy>
           <width>90</width>
-          <height>98</height>
+          <height>130</height>
           <label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
           <font>-</font>
           <onleft>609</onleft>
           <onright>21</onright>
           <onup>609</onup>
           <ondown>609</ondown>
-          <texturefocus colordiffuse="HL">MusicOSD/OSDRepeat.png</texturefocus>
-          <texturenofocus>MusicOSD/OSDRepeat.png</texturenofocus>
-          <onclick>XBMC.PlayerControl(Repeat)</onclick>
+          <texturefocus>-</texturefocus>
+          <texturenofocus>-</texturenofocus>
+          <onclick>PlayerControl(Repeat)</onclick>
         </control>
-        <control type="image" id="4">
-          <posx>900</posx>
-          <posy>3</posy>
-          <width>90</width>
-          <height>98</height>
-          <texture>MusicOSD/OSDRepeatOne.png</texture>
-          <visible>Playlist.IsRepeatOne</visible>
-          <visible>!Control.HasFocus(1)</visible>
-        </control>
-        <control type="image" id="5">
-          <posx>900</posx>
-          <posy>3</posy>
-          <width>90</width>
-          <height>98</height>
-          <texture colordiffuse="HL">MusicOSD/OSDRepeatOne.png</texture>
-          <visible>Playlist.IsRepeatOne</visible>
-          <visible>Control.HasFocus(1)</visible>
-        </control>
-        <control type="image" id="6">
-          <posx>900</posx>
-          <posy>3</posy>
-          <width>90</width>
-          <height>98</height>
-          <texture>MusicOSD/OSDRepeatAll.png</texture>
-          <visible>Playlist.IsRepeat</visible>
-          <visible>!Control.HasFocus(1)</visible>
-        </control>
-        <control type="image" id="7">
-          <posx>0</posx>
-          <posy>3</posy>
-          <width>90</width>
-          <height>98</height>
-          <texture colordiffuse="HL">MusicOSD/OSDRepeatAll.png</texture>
-          <visible>Playlist.IsRepeat</visible>
-          <visible>Control.HasFocus(1)</visible>
-        </control>
+          <control type="image">
+            <posx>800</posx>
+            <posy>-15</posy>
+            <width>90</width>
+            <height>130</height>
+			<aspectratio>scale</aspectratio>
+            <texture>MusicOSD/OSDRepeat.png</texture>
+            <visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
+            <visible>!Control.HasFocus(1)</visible>
+          </control> 
+          <control type="image">
+            <posx>800</posx>
+            <posy>-15</posy>
+            <width>90</width>
+            <height>130</height>
+			<aspectratio>scale</aspectratio>
+            <texture colordiffuse="HL">MusicOSD/OSDRepeat.png</texture>
+            <visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
+            <visible>Control.HasFocus(1)</visible>
+          </control>
+          <control type="image">
+            <posx>800</posx>
+            <posy>-15</posy>
+            <width>90</width>
+            <height>130</height>
+			<aspectratio>scale</aspectratio>
+            <texture>MusicOSD/OSDRepeatOne.png</texture>
+            <visible>Playlist.IsRepeatOne</visible>
+            <visible>!Control.HasFocus(1)</visible>
+          </control>
+          <control type="image">
+            <posx>800</posx>
+            <posy>-15</posy>
+            <width>90</width>
+            <height>130</height>
+			<aspectratio>scale</aspectratio>
+            <texture colordiffuse="HL">MusicOSD/OSDRepeatOne.png</texture>
+            <visible>Playlist.IsRepeatOne</visible>
+            <visible>Control.HasFocus(1)</visible>
+          </control>
+          <control type="image">
+            <posx>800</posx>
+            <posy>-15</posy>
+            <width>90</width>
+            <height>130</height>
+			<aspectratio>scale</aspectratio>
+            <texture>MusicOSD/OSDRepeatAll.png</texture>
+            <visible>Playlist.IsRepeat</visible>
+            <visible>!Control.HasFocus(1)</visible>
+          </control>
+          <control type="image">
+            <posx>800</posx>
+            <posy>-15</posy>
+            <width>90</width>
+            <height>130</height>
+			<aspectratio>scale</aspectratio>
+            <texture colordiffuse="HL">MusicOSD/OSDRepeatAll.png</texture>
+            <visible>Playlist.IsRepeat</visible>
+            <visible>Control.HasFocus(1)</visible>
+          </control> 
         <!--<control type="button" id="601">
           <visible>false</visible>
 		  <posx>-150</posx>
@@ -159,10 +182,11 @@
           <onclick>PlayerControl(Next)</onclick>
         </control>
         <control type="togglebutton" id="21" description="Random">
-          <posx>1000</posx>
-          <posy>1</posy>
-          <width>90</width>
-          <height>98</height>
+          <posx>875</posx>
+            <posy>-12</posy>
+            <width>112</width>
+            <height>125</height>
+			<aspectratio>scale</aspectratio>
           <label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
           <altlabel>$LOCALIZE[590] : $LOCALIZE[16041]</altlabel>
           <font>-</font>
@@ -206,14 +230,14 @@
           <onup>602</onup>
           <ondown>602</ondown>
 		  <aspectratio>keep</aspectratio>
-
           <texturefocus colordiffuse="HL">MusicOSD/OSDOptions.png</texturefocus>
           <texturenofocus>MusicOSD/OSDOptions.png</texturenofocus>
           <onclick allowhiddenfocus="true">Control.SetFocus(555)</onclick>
           <!--<onclick>ActivateWindow(1113)</onclick>-->
         </control>
       </control>
-    </control>
+    </control>  
+
     <control type="group" description="All dialog content">
       <animation effect="fade" start="100" end="0" time="100" condition="!ControlGroup(100).HasFocus()">Conditional</animation>
       <control type="image">
@@ -222,7 +246,7 @@
         <width>690</width>
         <height>720</height>
         <texture border="21">img/DialogNew.png</texture>
-		  </control>
+	  </control>
       <control type="label" description="Dialog heading">
         <posx>615</posx>
         <posy>264</posy>
@@ -231,7 +255,7 @@
         <label>33063</label>
         <align>center</align>
         <aligny>center</aligny>
-				<textcolor>HL</textcolor>
+		<textcolor>HL</textcolor>
         <include>TitleCommons</include>
       </control>
       <control type="grouplist" id="100" description="Music OSD Options">
