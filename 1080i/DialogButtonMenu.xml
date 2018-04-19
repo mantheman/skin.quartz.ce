@@ -8,13 +8,12 @@
     <posy>0</posy>
   </coordinates>
   <controls>
-    
     <control type="image">
         <centerleft>960</centerleft>
         <centertop>540</centertop>
-        <width>975</width>
-        <height>570</height>
-        <texture border="128">img/DialogPanel.png</texture>
+        <width>800</width>
+        <height>400</height>
+        <texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
       </control>
 	  <control type="grouplist" id="9000">
       <centerleft>960</centerleft>
@@ -125,8 +124,6 @@
       <height>124</height>
       <aspectratio>stretch</aspectratio>
       <texture border="9">img/MediaButton2.png</texture>
-        		<!--<texture border="36">focus/FrameFO.png</texture>
-        		<bordersize>-9</bordersize>-->
       <animation type="Conditional" condition="Control.HasFocus(3)">
         <effect type="slide" start="0,0" end="156,0" time="180" center="auto" reversible="true" />
       </animation>

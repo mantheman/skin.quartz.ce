@@ -9,11 +9,10 @@
       <control type="image">
         <centerleft>960</centerleft>
         <centertop>540</centertop>
-        <width>1200</width>
-        <height>846</height>
-        <texture border="128">img/DialogPanel.png</texture>
+        <width>1000</width>
+        <height>700</height>
+        <texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
       </control>
-      
       <control type="group">
         <top>270</top>
       <control type="label" id="1" description="Heading">

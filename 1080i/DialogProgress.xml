@@ -6,9 +6,9 @@
     <control type="image">
       <centerleft>960</centerleft>
       <centertop>540</centertop>
-      <width>1200</width>
-      <height>810</height>
-      <texture border="128">img/DialogPanel.png</texture>
+      <width>1040</width>
+      <height>660</height>
+      <texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
     </control>
     <control type="group">
       <posx>480</posx>

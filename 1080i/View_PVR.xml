@@ -11,6 +11,7 @@
 			<visible>ListItem.IsRecording</visible>
 		</control>
 	</include>
+	
 	<include name="PVRSideBlade">
 		<control type="group">
 			<animation type="Conditional" condition="![ControlGroup(9000).HasFocus]">
@@ -22,7 +23,7 @@
 				<posy>0</posy>
 				<width>548</width>
 				<height>1080</height>
-				<texture border="0,0,30,0">img/ViewMenu.png</texture>
+				<texture colordiffuse="$VAR[MenuTransperancy]" border="0,0,30,0">img/ViewMenu.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
 				<posx>1</posx>
@@ -102,6 +103,7 @@
 					<description>View As button</description> 
 					<include>9000Buttons</include> 
 					<label>-</label> 
+					<enable>!Window.IsActive(MyPVRGuide.xml)</enable>
 					<!-- <visible>Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</visible> --> 
 				</control> 
 				<control type="button" id="3"> 
@@ -120,7 +122,108 @@
 				</control> 
 			</control>
 		</control>
-	</include>
+	</include>	
+
+<!--	<include name="PVROptionMenu">
+		<control type="group">
+			<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+			<include>DialogOpenCloseVisible</include>
+			<control type="image"  description="Background image">
+				<posx>200</posx>
+				<posy>90</posy>
+				<height>890</height>
+				<width>680</width>
+				<texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
+			</control>
+			<control type="grouplist" id="9000">
+				<posx>270</posx>
+				<posy>160</posy>
+				<width>540</width>
+				<height>1120</height>
+				<itemgap>0</itemgap>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<scrolltime>200</scrolltime>
+				<orientation>vertical</orientation>
+				<control type="button" id="100">
+					<description>Channels</description>
+					<include>9000Buttons</include>
+					<label>19019</label> 
+					<onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">NextChannelGroup</onclick> 
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick> 
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick> 
+				</control>
+				<control type="button" id="101">
+					<description>TV Guide</description>
+					<include>9000Buttons</include>
+					<label>22020</label> 
+					<onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick> 
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick> 
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick> 
+				</control>
+				<control type="button" id="102">
+					<description>Recordings</description>
+					<include>9000Buttons</include>
+					<label>19163</label> 
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick> 
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick> 
+				</control>
+				<control type="button" id="103">
+					<description>Timers</description>
+					<include>9000Buttons</include>
+					<label>19040</label> 
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick> 
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick> 
+				</control>
+				<control type="button" id="104">
+					<description>Search</description>
+					<include>9000Buttons</include>
+					<label>137</label> 
+					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick> 
+					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick> 
+				</control>
+				<control type="label" id="201">
+					<textcolor>HL</textcolor>
+					<textoffsetx>10</textoffsetx>
+					<align>left</align>
+					<include>9000Buttons</include>
+					<label>31006</label>
+				</control>
+				<control type="button" id="28"> 
+					<description>Channel Groups</description> 
+					<include>9000Buttons</include>
+					<label>-</label> 
+				</control> 
+				<control type="radiobutton" id="5"> 
+					<description>Group recording items by folder structure</description> 
+					<include>9000Buttons</include> 
+					<label>19270</label> 
+					<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible> 
+				</control> 
+				<control type="button" id="2"> 
+					<description>View As button</description> 
+					<include>9000Buttons</include> 
+					<label>-</label> 
+				</control> 
+				<control type="button" id="3"> 
+					<description>Sort by button</description> 
+					<include>9000Buttons</include> 
+					<label>103</label> 
+				</control> 
+				<control type="togglebutton" id="4"> 
+					<description>Sort asc</description> 
+					<include>9000Buttons</include> 
+					<alttexturefocus border="5">img/MediaButton2.png</alttexturefocus> 
+					<alttexturenofocus>-</alttexturenofocus> 
+					<label>584</label>
+					<altlabel>585</altlabel>
+					<usealttexture>Container.SortDirection(Ascending)</usealttexture> 
+				</control> 
+			</control>
+		</control>
+	</include>  -->
 	<!-- ID: 10 -->
 	<!-- EPG TIMELINE -->
 	<include name="EPGTimelineView">
@@ -458,7 +561,7 @@
               </control>
               <control type="image">
                 <posx>132</posx>
-                <posy>0</posy>
+                <posy>0</posy> <visible>false</visible>
                 <width>21</width>
                 <height>111</height>
                 <aspectratio>keep</aspectratio>
@@ -496,7 +599,7 @@
                 <posy>315</posy>
                 <width>1749</width>
                 <height>144</height>
-                <texture border="26">img/Slider5.png</texture>
+                <texture border="26">img/MediaButton2.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
             <animation condition="Container.Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
@@ -656,7 +759,7 @@
                 <posy>315</posy>
                 <width>1749</width>
                 <height>144</height>
-                <texture border="26">img/Slider5.png</texture>
+                <texture border="26">img/MediaButton2.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
             <animation condition="Container.Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
@@ -858,7 +961,7 @@
                 <posy>366</posy>
                 <width>1749</width>
                 <height>153</height>
-                <texture border="26">img/Slider5.png</texture>
+                <texture border="26">img/MediaButton2.png</texture>
                 <aspectratio>stretch</aspectratio>
               </control>
               <animation condition="Container.Position(0)" effect="slide" start="0,0" end="0,-378" time="180" easing="inout" reversible="true">Conditional</animation>

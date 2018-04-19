@@ -5,15 +5,15 @@
     <control type="group">
      <include>OpenClose</include>
 		  <control type="image">
-        <centerleft>960</centerleft>
-        <centertop>540</centertop>
-        <width>990</width>
-        <height>540</height>
-        <texture border="128">img/DialogPanel.png</texture>
+        <centerleft>956</centerleft>
+        <centertop>748</centertop>
+        <width>890</width>
+        <height>340</height>
+        <texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
       </control>
       <control type="image">
         <posx>630</posx>
-        <posy>459</posy>
+        <posy>664</posy>
         <width>660</width>
         <height>75</height>
         <texture border="9">img/MediaButton2.png</texture>
@@ -22,7 +22,7 @@
       </control>
       <control type="group">
         <posx>405</posx>
-        <posy>296</posy>
+        <posy>500</posy>
         <control type="list" id="9001" description="PW Options">
           <posx>255</posx>
           <posy>150</posy>

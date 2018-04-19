@@ -9,11 +9,11 @@
 	  <width>1110</width>
 	  <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(sliderdialog)">Conditional</animation>
       <control type="image" description="background image">
-        <centertop>50%</centertop>
-        <posy>0</posy>
-        <width>1110</width>
-        <height>1200</height>
-        <texture border="128">img/DialogPanelST.png</texture>
+        <centerleft>553</centerleft>
+        <centertop>550</centertop>
+        <width>1010</width>
+        <height>1038</height>
+        <texture colordiffuse="$VAR[OSDTransperancy]" border="128">img/DialogCE.png</texture>
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="label" id="2" description="Settings">

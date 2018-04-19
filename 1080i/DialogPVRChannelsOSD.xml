@@ -10,12 +10,12 @@
     <control type="group">
       <!--<include>DialogOpenClose</include>-->
       <control type="image">
-        <posx>106</posx>
-        <posy>22</posy>
-        <width>1040</width>
-        <height>870</height>
+        <posx>178</posx>
+        <posy>98</posy>
+        <width>896</width>
+        <height>720</height>
         <aspectratio>stretch</aspectratio>
-        <texture border="128">img/DialogPanel.png</texture>
+        <texture colordiffuse="$VAR[OSDTransperancy]" border="128">img/DialogCE.png</texture>
       </control>
 	  <control type="label">
         <posx>320</posx>

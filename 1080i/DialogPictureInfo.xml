@@ -7,9 +7,9 @@
 		  <control type="image">
         <centerleft>960</centerleft>
         <centertop>540</centertop>
-        <width>1200</width>
-        <height>1230</height>
-        <texture border="128">img/DialogPanel.png</texture>
+        <width>1080</width>
+        <height>1030</height>
+        <texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
       </control>
     <control type="label" description="Heading">
       <centerleft>960</centerleft>
@@ -22,7 +22,7 @@
     </control>
     <control type="group">
       <centerleft>960</centerleft>
-      <posy>180</posy>
+      <posy>150</posy>
       <width>930</width>
 			<control type="panel" id="5">
         <width>930</width>

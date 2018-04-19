@@ -6,11 +6,11 @@
   <controls>
     <control type="image">
         <centerleft>960</centerleft>
-        <centertop>540</centertop>
-        <width>1560</width>
-        <height>810</height>
-        <texture border="128">img/DialogPanel.png</texture>
-		  </control>
+        <centertop>530</centertop>
+        <width>1360</width>
+        <height>610</height>
+        <texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
+	</control>
     <control type="group">
       <posx>360</posx>
       <posy>330</posy>

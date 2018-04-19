@@ -683,9 +683,9 @@
       <control type="image">
         <centerleft>960</centerleft>
         <centertop>540</centertop>
-        <width>810</width>
-        <height>915</height>
-        <texture border="128">img/DialogPanel.png</texture>
+        <width>760</width>
+        <height>800</height>
+        <texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
 		  </control>
       <control type="grouplist" id="9000">
         <include>9000GrouplistParameters</include>

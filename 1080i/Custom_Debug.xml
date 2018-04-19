@@ -45,6 +45,11 @@
 				</control>
 				<control type="label">
 					<textcolor>red</textcolor>
+					<label>CustomDVD.xml</label>
+					<visible>Window.IsVisible(CustomDVD.xml)</visible>
+				</control>
+				<control type="label">
+					<textcolor>red</textcolor>
 					<label>LoginScreen.xml</label>
 					<visible>Window.IsVisible(LoginScreen.xml)</visible>
 				</control>
@@ -62,6 +67,11 @@
 					<textcolor>red</textcolor>
 					<label>MyMusicPlaylist.xml</label>
 					<visible>Window.IsVisible(MyMusicPlaylist.xml)</visible>
+				</control>
+				<control type="label">
+					<textcolor>red</textcolor>
+					<label>MyPlaylist.xml</label>
+					<visible>Window.IsVisible(MyPlaylist.xml)</visible>
 				</control>
 				<control type="label">
 					<textcolor>red</textcolor>
@@ -105,6 +115,11 @@
 				</control>
 				<control type="label">
 					<textcolor>red</textcolor>
+					<label>MyPVR.xml</label>
+					<visible>Window.IsVisible(MyPVR.xml)</visible>
+				</control>
+				<control type="label">
+					<textcolor>red</textcolor>
 					<label>MyVideoNav.xml</label>
 					<visible>Window.IsVisible(MyVideoNav.xml)</visible>
 				</control>
@@ -125,6 +140,11 @@
 				</control>
 				<control type="label">
 					<textcolor>red</textcolor>
+					<label>CustomSources.xml</label>
+					<visible>Window.IsVisible(CustomSources.xml)</visible>
+				</control>
+				<control type="label">
+					<textcolor>red</textcolor>
 					<label>SettingsCategory.xml</label>
 					<visible>Window.IsVisible(SettingsCategory.xml)</visible>
 				</control>
@@ -132,6 +152,11 @@
 					<textcolor>red</textcolor>
 					<label>SkinSettings.xml</label>
 					<visible>Window.IsVisible(SkinSettings.xml)</visible>
+				</control>
+				<control type="label">
+					<textcolor>red</textcolor>
+					<label>CustomQuit.xml</label>
+					<visible>Window.IsVisible(CustomQuit.xml)</visible>
 				</control>
 				<control type="label">
 					<textcolor>red</textcolor>
@@ -143,7 +168,11 @@
 					<label>VideoFullScreen.xml</label>
 					<visible>Window.IsVisible(VideoFullScreen.xml)</visible>
 				</control>
-				<!-- Dialog labels -->
+				<control type="label">
+					<textcolor>red</textcolor>
+					<label>DialogFullScreenInfo.xml</label>
+					<visible>Window.IsVisible(DialogFullScreenInfo.xml)</visible>
+				</control>				<!-- Dialog labels -->
 				<control type="label">
 					<textcolor>red</textcolor>
 					<label>DialogAddonInfo.xml</label>

@@ -5,11 +5,11 @@
   <controls>
     <control type="group" description="All dialog content">
       <control type="image">
-        <posx>444</posx>
-        <posy>105</posy>
-        <width>1023</width>
-        <height>862</height>
-        <texture border="128">img/DialogPanel.png</texture>   <!--<colordiffuse>Overlay</colordiffuse>-->
+        <posx>560</posx>
+        <posy>205</posy>
+        <width>800</width>
+        <height>700</height>
+        <texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture> 
       </control>
       <control type="label" description="Dialog heading">
         <posx>615</posx>

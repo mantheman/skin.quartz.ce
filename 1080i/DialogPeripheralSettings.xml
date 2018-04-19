@@ -7,11 +7,11 @@
   </coordinates>
   <controls>
     <control type="image">
-      <posx>150</posx>
-      <posy>-75</posy>
-      <width>1620</width>
-      <height>1230</height>
-      <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
+      <posx>380</posx>
+      <posy>90</posy>
+      <width>1140</width>
+      <height>860</height>
+      <texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
     </control>
     <control type="group">
       <posx>435</posx>
@@ -42,11 +42,12 @@
         <ondown>28</ondown>
       </control>
       <control type="scrollbar" id="60">
-        <posx>987</posx>
+        <posx>1020</posx>
         <posy>105</posy>
-        <width>36</width>
-        <onleft>3</onleft>
-        <onright>3</onright>
+        <width>10</width>
+		<height>480</height>
+        <onleft>5</onleft>
+        <onright>5</onright>
         <ondown>60</ondown>
         <onup>60</onup>
         <showonepage>false</showonepage>

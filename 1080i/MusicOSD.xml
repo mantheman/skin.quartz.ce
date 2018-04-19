@@ -245,7 +245,7 @@
         <centertop>567</centertop>
         <width>690</width>
         <height>720</height>
-        <texture border="21">img/DialogNew.png</texture>
+        <texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
 	  </control>
       <control type="label" description="Dialog heading">
         <posx>615</posx>

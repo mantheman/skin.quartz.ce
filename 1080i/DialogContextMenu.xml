@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window>
-  <defaultcontrol always="true">996</defaultcontrol>
-  <include>OpenClose</include>
+<window> 
+  <defaultcontrol always="true">996</defaultcontrol> 
+  <include>DialogOpenClose</include> 
   <coordinates>
-  <system>1</system>
+	<origin x="0" y="0" />
   </coordinates>
-  <controls>
+  <controls> 
     <control type="image" id="999" description="Background image">
-      <posx>-150</posx>
-      <posy>-100</posy>
-      <height>1280</height>
-      <width>800</width>
-      <texture border="128">img/DialogPanel.png</texture>
-			<!--<texture border="60,60,60,60">img/ContextMenu.png</texture>-->
+	  <centerleft>960</centerleft>
+      <centertop>800</centertop>
+      <height>1120</height>
+      <width>600</width>
+      <texture colordiffuse="$VAR[MenuTransperancy]" border="128">img/DialogCE.png</texture>
     </control>
     <control type="grouplist" id="996" description="Context menu container">
-      <posx>16</posx>
-      <posy>60</posy>
+	  <centerleft>970</centerleft>
+      <centertop>800</centertop>
       <width>486</width>
       <height max="960">auto</height>
       <itemgap>3</itemgap>

@@ -7,9 +7,9 @@
 	 <control type="image">
         <centerleft>960</centerleft>
         <centertop>540</centertop>
-        <width>900</width>
-        <height>480</height>
-        <texture border="128">img/DialogPanelST.png</texture>
+        <width>800</width>
+        <height>300</height>
+        <texture colordiffuse="$VAR[OSDTransperancy]" border="128">img/DialogCE.png</texture>
       </control>
 	  <control type="label" id="10" description="Heading">
         <centerleft>960</centerleft>
