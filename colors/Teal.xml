@@ -20,7 +20,7 @@
 	<color name="HL">FF009688</color>
 	<color name="Overlay">FF000000</color>
 
-	<color name="MenuOff">f0f0f0f0</color>	
+	<color name="MenuOff">0</color>	
 	<color name="MenuLow">e0e0e0e0</color>
 	<color name="MenuMedLow">d0d0d0d0</color>
 	<color name="MenuMed">c0c0c0Cc</color>
