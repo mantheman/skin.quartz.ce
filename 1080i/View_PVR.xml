@@ -23,7 +23,7 @@
 				<posy>0</posy>
 				<width>548</width>
 				<height>1080</height>
-				<texture colordiffuse="$VAR[MenuTransperancy]" border="0,0,30,0">img/ViewMenu.png</texture>
+				<texture colordiffuse="$VAR[MenuTransperancy]" border="0,0,30,0">img/BlackDot.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
 				<posx>1</posx>
@@ -561,7 +561,7 @@
               </control>
               <control type="image">
                 <posx>132</posx>
-                <posy>0</posy> <visible>false</visible>
+                <posy>0</posy> 
                 <width>21</width>
                 <height>111</height>
                 <aspectratio>keep</aspectratio>

@@ -5,20 +5,31 @@
 	<value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
 	<value>DefaultFolder.png</value>
   </variable>
-  <variable name="MenuTransperancy">
-	<value condition="Skin.HasSetting(MenuHigh)">MenuHigh</value>
-	<value condition="Skin.HasSetting(MenuMed)">MenuMed</value>
-	<value condition="Skin.HasSetting(MenuLow)">MenuLow</value>
-	<value condition="Skin.HasSetting(MenuOff)">MenuOff</value>
-	<value>MenuMed</value>
-  </variable>
-  <variable name="OSDTransperancy">
-	<value condition="Skin.HasSetting(OSDHigh)">OSDHigh</value>
-	<value condition="Skin.HasSetting(OSDMed)">OSDMed</value>
-	<value condition="Skin.HasSetting(OSDLow)">OSDLow</value>
-	<value condition="Skin.HasSetting(OSDOff)">OSDOff</value>
-	<value>OSDHigh</value>
-  </variable>
+	<variable name="DialogDimmer">
+		<value condition="Skin.HasSetting(MenuHigh)">c0c0c0Cc</value>
+		<value condition="Skin.HasSetting(MenuMed)">b0b0b0b0</value>
+		<value condition="Skin.HasSetting(MenuLow)">90909090</value>
+		<value condition="Skin.HasSetting(MenuOff)">80808080</value>
+		<value>b0b0b0b0</value>
+	</variable>
+	<variable name="MenuTransperancy">
+		<value condition="Skin.HasSetting(MenuHigh)">MenuHigh</value>
+		<value condition="Skin.HasSetting(MenuMedLow)">MenuMedLow</value>
+		<value condition="Skin.HasSetting(MenuMed)">MenuMed</value>
+		<value condition="Skin.HasSetting(MenuMedHigh)">MenuMedHigh</value>
+		<value condition="Skin.HasSetting(MenuLow)">MenuLow</value>
+		<value condition="Skin.HasSetting(MenuOff)">MenuOff</value>
+		<value>MenuMedLow</value>
+	</variable>
+	<variable name="OSDTransperancy">
+		<value condition="Skin.HasSetting(OSDHigh)">OSDHigh</value>
+		<value condition="Skin.HasSetting(OSDMedLow)">OSDMedLow</value>
+		<value condition="Skin.HasSetting(OSDMed)">OSDMed</value>
+		<value condition="Skin.HasSetting(OSDMedHigh)">OSDMedHigh</value>
+		<value condition="Skin.HasSetting(OSDLow)">OSDLow</value>
+		<value condition="Skin.HasSetting(OSDOff)">OSDOff</value>
+		<value>OSDMedHigh</value>
+	</variable>
   <variable name="Trailer" description="Trailers check keep in front">
     <value condition="Container.Content(Movies) + !String.IsEmpty(ListItem.Trailer)">$LOCALIZE[20410]</value>
   </variable>
