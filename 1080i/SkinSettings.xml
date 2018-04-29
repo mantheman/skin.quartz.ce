@@ -502,7 +502,7 @@
 					<control type="label">
 						<width>1335</width>
 						<height>135</height>
-						<label>[COLOR grey]$LOCALIZE[31143][/COLOR] $INFO[System.AddonTitle(skin.quartz.ce.krypton)] [CR][CR][COLOR grey]$LOCALIZE[31144][/COLOR] $INFO[System.AddonVersion(skin.quartz.ce.krypton)]</label>
+						<label>[COLOR grey]$LOCALIZE[31143][/COLOR] $INFO[System.AddonTitle(skin.quartz.ce)] [CR][CR][COLOR grey]$LOCALIZE[31144][/COLOR] $INFO[System.AddonVersion(skin.quartz.ce)]</label>
 						<font>size22</font>
 					</control>
 					<control type="label">
