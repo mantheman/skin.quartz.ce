@@ -41,14 +41,13 @@
         <height>1080</height>
         <texture border="1,0,1,0">img/MusicPlayerOverlay.png</texture>
       </control>
-	  <!--
       <control type="progress" id="23" description="Progress Bar">
         <visible>true</visible>
         <posx>-840</posx>
         <posy>-750</posy>
         <width>50</width>
         <info>Player.Progress</info>
-      </control> -->
+      </control>
       <control type="group" description="INFO grouped for visibility sake">
         <visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
         <animation effect="fade" time="500">Visible</animation>
