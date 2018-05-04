@@ -111,7 +111,7 @@
           <height>378</height>
           <font>size22</font>
           <align>justify</align>
-          <autoscroll delay="6500" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+          <autoscroll delay="6500" time="4000" repeat="10000">Skin.HasSetting(_AutoScroll)</autoscroll>
         </control>
       </control>
     </control>

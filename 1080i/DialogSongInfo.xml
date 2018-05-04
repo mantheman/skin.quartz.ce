@@ -41,7 +41,7 @@
           <height>258</height>
           <font>size22</font>
           <align>justify</align>
-          <autoscroll delay="6500" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+          <autoscroll delay="6500" time="4000" repeat="10000">Skin.HasSetting(_AutoScroll)</autoscroll>
           <label>$INFO[ListItem.Property(Album_Description)]</label>
         </control>
         <control type="textbox" description="Plot">
@@ -52,7 +52,7 @@
           <height>258</height>
           <font>size22</font>
           <align>justify</align>
-          <autoscroll delay="6500" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+          <autoscroll delay="6500" time="4000" repeat="10000">Skin.HasSetting(_AutoScroll)</autoscroll>
           <label>$INFO[ListItem.Property(Artist_Description)]</label>
         </control>
       </control>
