@@ -60,88 +60,77 @@
     <control type="label" description="Path">
       <visible>Skin.HasSetting(ShowFileInfo)</visible>
       <posx>60</posx>
-      <posy>990</posy>
+      <posy>950</posy>
       <width>1800</width>
       <height>27</height>
-      <font>size15</font>
+      <font>size16</font>
       <align>left</align>
       <textcolor>Silver</textcolor>
       <haspath>true</haspath>
       <scroll>true</scroll>
       <label>$INFO[ListItem.FilenameAndPath]</label>
     </control>
-    <control type="image">
-      <posx>0</posx>
-      <posy>1023</posy>
-      <height>60</height>
-      <width>1920</width>
-      <aspectratio>stretch</aspectratio>
-      <texture>img/BlackDotT.png</texture>
-    </control>
-    <control type="image" description="Navbar">
-      <posx>-82</posx>
-      <posy>1028</posy>
-      <width>2085</width>
-      <height>1</height>
-      <aspectratio>stretch</aspectratio>
-      <texture>img/Line1.png</texture>
-    </control>
+      <control type="image" description="Navbar">
+        <posx>-90</posx>
+        <posy>963</posy>
+        <width>2100</width>
+        <height>136</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>img/HomeMenuBar.png</texture>
+      </control>
     <control type="group" description="Options">
       <posy>0</posy>
       <posx>0</posx>
       <control type="grouplist" id="300">
-        <posx>15</posx>
-        <posy>1026</posy>
-        <width>1890</width>
-        <height>58</height>
+        <posx>0</posx>
+        <posy>993</posy>
+        <width>1920</width>
+        <height>88</height>
         <itemgap>0</itemgap>
         <aligny>bottom</aligny>
         <align>center</align>
         <onup>50</onup>
         <orientation>horizontal</orientation>
-        <control type="button" id="12" description="Album Info">
-          <height>60</height>
-          <width>270</width>
-          <label>10523</label>
-          <font>size18</font>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
-          <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
-        </control>
-        <control type="button" id="13" description="Get Thumb">
-          <height>60</height>
-          <width>270</width>
-          <label>13405</label>
-          <font>size18</font>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
-          <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
-        </control>
-        <control type="button" id="14" description="Decrease Rating">
-          <height>60</height>
-          <width>270</width>
-          <label>-  $LOCALIZE[563]</label>
-          <onclick>DecreaseRating</onclick>
-          <font>size18</font>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
-          <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
-        </control>
         <control type="button" id="15" description="Increase Rating">
-          <height>60</height>
-          <width>270</width>
+          <height>66</height>
+          <width>300</width>
+          <align>center</align>
           <label>+ $LOCALIZE[563]</label>
           <onclick>IncreaseRating</onclick>
-          <font>size18</font>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
-          <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
+          <font>size22</font>
         </control>
-        <control type="button" id="10" description="Save rating">
-          <height>60</height>
-          <width>270</width>
+        <control type="button" id="14" description="Decrease Rating">
+          <height>66</height>
+          <width>300</width>
+          <align>center</align>
+          <label>-  $LOCALIZE[563]</label>
+          <onclick>DecreaseRating</onclick>
+          <font>size22</font>
+        </control>
+        <control type="button" id="12" description="Album Info">
+          <height>66</height>
+          <width>300</width>
+          <align>center</align>
+          <label>10523</label>
+          <font>size22</font>
+        </control>
+        <control type="button" id="13" description="Get Thumb">
+          <height>66</height>
+          <width>300</width>
+          <align>center</align>
+          <label>13405</label>
+          <font>size22</font>
+        </control>
+
+
+        <!--<control type="button" id="10" description="Save rating">
+          <height>66</height>
+          <width>300</width>
+          <align>center</align>
           <label>186</label>
-          <font>size18</font>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
-          <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
+          <font>size22</font>
         </control>
-        <!--<control type="button" id="11" description="Cancel">
+        <control type="button" id="11" description="Cancel">
 					<height>40</height>
 					<width>180</width>
 					<label>222</label>
@@ -150,14 +139,12 @@
 					<alttexturefocus>img/HomeBarFO.png</alttexturefocus>
 				</control>-->
         <control type="togglebutton" id="8999" description="Path">
-          <height>60</height>
-          <width>270</width>
+          <height>66</height>
+          <width>300</width>
           <align>center</align>
-          <font>size18</font>
+          <font>size22</font>
           <label>35500</label>
           <onclick>Skin.ToggleSetting(ShowFileInfo)</onclick>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
-          <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
         </control>
       </control>
     </control>
