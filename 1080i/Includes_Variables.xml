@@ -119,9 +119,9 @@
     <value condition="Window.IsActive(MyVideoPlaylist.xml)">$LOCALIZE[20012]</value>
     <value condition="Window.IsActive(MyMusicPlaylist.xml)">$LOCALIZE[20011]</value>
     <value condition="Window.IsActive(DialogVideoInfo.xml)">$LOCALIZE[20159]</value>
-    <value condition="Window.IsActive(DialogMusicInfo.xml) + container.content(albums)">$LOCALIZE[13351]</value>
-    <value condition="Window.IsActive(DialogMusicInfo.xml) + container.content(artists)">$LOCALIZE[21891]</value>
-    <value condition="Window.IsActive(DialogMusicInfo.xml) + container.content(songs)">$LOCALIZE[658]</value>
+    <value condition="Window.IsActive(DialogAlbumInfo.xml) + container.content(albums)">$LOCALIZE[13351]</value>
+    <value condition="Window.IsActive(DialogAlbumInfo.xml) + container.content(artists)">$LOCALIZE[21891]</value>
+    <value condition="Window.IsActive(DialogSongInfo.xml) + container.content(songs)">$LOCALIZE[658]</value>
     <value condition="Window.IsActive(DialogAddonInfo.xml)">$LOCALIZE[24003]</value>
     <value condition="Container.content(movies) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342]</value>
     <value condition="Container.content(tvshows) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343]</value>
