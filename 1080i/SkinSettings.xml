@@ -501,6 +501,11 @@
 					<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">ActivateWindow(1166)</onclick>
 					<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup)</onclick>
 				</control>
+				<control type="button" id="3505" description="cache textures">
+					<include>SkinSettingsButton</include>
+					<label>$LOCALIZE[31168]</label>
+					<onclick>RunScript(special://skin/scripts/cachit.py)</onclick>
+				</control>
 				<control type="button" id="3504" description="Reset Skin">
 					<include>SkinSettingsButton</include>
 					<label>$LOCALIZE[31141]</label>
