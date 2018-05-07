@@ -11,12 +11,12 @@ if sys.platform == "win32":
 
 loc = xbmc.translatePath("special://skin//scripts//texturecache.py")
 
-rc = xbmcgui.Dialog().yesno('Texture Cache Maintenance utility', 'This may take awhile to run.', '', 'Sure you want to continue?')
+rc = xbmcgui.Dialog().yesno('Texture Cache Maintenance', 'This may take awhile to run.', '', 'Sure you want to continue?')
 
 if not rc: sys.exit(0)
  
 dialog = xbmcgui.DialogProgress()
-dialog.create('Texture Cache Maintenance utility', ("Initiating"))
+dialog.create('Texture Cache Maintenance', ("Initiating"))
 
 p = subprocess.Popen(['python', loc, 'c'], bufsize=1, shell=use_shell, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
