@@ -1037,7 +1037,7 @@
         </control>
       </control>
       <control type="group">
-        <visible>Control.IsVisible(51)</visible>
+        <visible>Control.IsVisible(51) + !ListItem.IsFolder</visible>
         <control type="label" description="Label2">
           <posx>45</posx>
           <width>630</width>
@@ -1087,7 +1087,7 @@
         </control>
       </control>
       <control type="group">
-        <visible>Control.IsVisible(51)</visible>
+        <visible>Control.IsVisible(51) + !ListItem.IsFolder</visible>
         <control type="label" description="Label2">
           <posx>45</posx>
           <width>630</width>
