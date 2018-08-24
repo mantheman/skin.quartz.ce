@@ -214,6 +214,7 @@
 		<value condition="Control.HasFocus(3505)">$LOCALIZE[31169]</value>
 		<value condition="Control.HasFocus(3700)">$LOCALIZE[31165]</value>
 		<value condition="Control.HasFocus(3701)">$LOCALIZE[31167]</value>
+		<value condition="Control.HasFocus(3702)">$LOCALIZE[31170]</value>
 		<value condition="Control.HasFocus(3720)">$LOCALIZE[31118]</value>
 		<value condition="Window.IsVisible(Custom_HomeCustomise.xml) + !IsEmpty(Window(home).Property(ItemPath))">$LOCALIZE[31374]</value>
 	</variable>
