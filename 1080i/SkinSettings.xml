@@ -141,27 +141,6 @@
 					<onclick>Skin.Reset(shutdown)</onclick>
 				</control>
 			</control>
-			<!--<control type="grouplist" id="3011" description="Category Add-ons">
-        <visible>Container(3000).HasFocus(3102)</visible>
-        <width>892</width>
-        <height>900</height>
-        <onleft>3000</onleft>
-        <pagecontrol>3001</pagecontrol>
-        <scrolltime tween="sine" easing="inout">280</scrolltime>
-        <control type="button" id="3202" description="Lyrics">
-          <include>SkinSettingsButton</include>
-          <label>$LOCALIZE[24020] $LOCALIZE[24013] $LOCALIZE[24000]</label>
-          <label2>$INFO[Skin.String(LyricPath)]</label2>
-          <onclick>Addon.SetAddon(dummy, kodi.python.pluginsource)</onclick>
-		  <altclick>Skin.SetAddon(script.cu.lrclyrics)</altclick>
-        </control>
-        <control type="button" id="3215" description="Skin Widgets">
-          <include>SkinSettingsButton</include>
-          <label>backup</label>
-          <onclick>RunScript(special://skin/scripts/script.skin.helper.skinbackup/default.py,action=backup)</onclick>
-        </control>
-      </control>
-	  -->
 			<control type="grouplist" id="3030" description="Category Views">
 				<visible>Container(3000).HasFocus(3103)</visible>
 				<width>1280</width>
@@ -469,6 +448,7 @@
 					<label>$LOCALIZE[31117]</label>
 					<onclick>Skin.Reset(_HideMusicPlayerFanart)</onclick>
 					<onclick>Skin.Reset(_FullScreenMusic)</onclick>
+					<onclick>Skin.Reset(BGvideoOff)</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="3050" description="Category Advanced">
