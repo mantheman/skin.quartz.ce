@@ -34,6 +34,8 @@
 	<expression name="isEnabledParentDirectory">System.GetBool(filelists.showparentdiritems)</expression>
 	<expression name="isnotEnabledParentDirectory">!System.GetBool(filelists.showparentdiritems)</expression>
 	<expression name="isEnabledScrollbar">!String.IsEqual(Skin.String(show-scrollbar),$LOCALIZE[31877])</expression>
+	<expression name="BGvideoPlaying">Player.HasVideo + !Skin.HasSetting(BGvideoOff)</expression>
+
   <include file="Includes_Variables.xml" />
   <include file="defaults.xml" />
   <include file="CommonViews.xml" />
@@ -57,20 +59,14 @@
   <include name="DiffuseBG">
     <control type="image" description="BG">
 	  <visible>Skin.HasSetting(HideFanart)</visible>
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>100%</width>
-      <height>100%</height>
+      <include>Dimensions_Fullscreen</include>
       <aspectratio>stretch</aspectratio>
       <texture>img/BGOverlay.png</texture>
       <colordiffuse>Overlay</colordiffuse>
     </control>
     <control type="image" description="BG">
 	  <visible>!Skin.HasSetting(HideFanart)</visible>
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>100%</width>
-      <height>100%</height>
+      <include>Dimensions_Fullscreen</include>
       <aspectratio>stretch</aspectratio>
       <texture fallback="img/BGOverlay4.png">img/BGOverlay$INFO[Skin.String(FanartVisibility)].png</texture>
       <colordiffuse>Overlay</colordiffuse>
@@ -78,46 +74,42 @@
   </include> 
   <include name="FullBackground">
     <control type="image" description="Show picture thumbs">
+	  <visible>![Player.HasVideo + !Skin.HasSetting(BGvideoOff)]</visible>
       <visible>Window.IsActive(MyPics.xml) + !Container.Content(addons)</visible>
 	  <depth>-0.80</depth>
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>100%</width>
-      <height>100%</height>
+      <include>Dimensions_Fullscreen</include>
       <aspectratio>scale</aspectratio>
       <fadetime>400</fadetime>
       <texture background="true" fallback="img/BlackDot.png">$INFO[ListItem.Thumb]</texture>
     </control>
     <control type="image" description="Show fanart">
+	  <visible>![Player.HasVideo + !Skin.HasSetting(BGvideoOff)]</visible>
       <visible>![Window.IsActive(MyPics.xml) + !Container.Content(addons)]</visible>
       <visible>!Skin.HasSetting(HideFanart)</visible>
 	  <depth>-0.80</depth>
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>100%</width>
-      <height>100%</height>
+      <include>Dimensions_Fullscreen</include>
       <aspectratio>stretch</aspectratio>
       <fadetime>400</fadetime>
       <texture background="true" fallback="img/BlackDot.png">$INFO[ListItem.Art(fanart)]</texture>
     </control>
     <control type="image" description="Hide fanart">
+	  <visible>![Player.HasVideo + !Skin.HasSetting(BGvideoOff)]</visible>
       <visible>!Window.IsActive(MyPics.xml) + Skin.HasSetting(HideFanart)</visible>
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>100%</width>
-      <height>100%</height>
+      <include>Dimensions_Fullscreen</include>
       <aspectratio>stretch</aspectratio>
       <fadetime>400</fadetime>
       <texture background="true" >img/BlackDot.png</texture>
     </control>
+	<control type="videowindow">
+		<visible>[Player.HasVideo + !Skin.HasSetting(BGvideoOff)]</visible>
+		<depth>-0.80</depth>
+		<include>Dimensions_Fullscreen</include>
+	</control>
 	<include>DiffuseBG</include>
   </include>
   <include name="MiniBackground">
     <control type="image" description="Default BG">
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>1920</width>
-      <height>1080</height>
+      <include>Dimensions_Fullscreen</include>
       <texture>img/BlackDot.png</texture>
     </control>
   </include>
@@ -134,10 +126,7 @@
   </include>
   <include name="DimBG">
     <control type="image" description="Default BG">
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>1920</width>
-      <height>1080</height>
+      <include>Dimensions_Fullscreen</include>
       <texture>img/BGDiffuse.png</texture>
       <aspectratio>stretch</aspectratio>
     </control>

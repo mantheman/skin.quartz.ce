@@ -5,7 +5,7 @@
   <defaultcontrol always="true">50</defaultcontrol>
   <include>OpenClose</include>
   <controls>
-    <include>MiniBackground</include>
+    <include>FullBackground</include>
     <control type="group">
 	  <!--<visible>!Window.IsActive(1118)</visible>-->
       <posx>0</posx>

@@ -5,7 +5,8 @@
   <include>FullBackground</include>
   
   
-  
+   <control type="group" description="Custom BG">
+	 <visible>![Player.HasVideo + !Skin.HasSetting(BGvideoOff)]</visible>
      <control type="image" description="Experimental custom BG">
 	  <depth>-0.80</depth>
 	  <width>100%</width>
@@ -26,6 +27,7 @@
       <texture fallback="img/BGOverlay4.png">img/BGOverlay$INFO[Skin.String(FanartVisibility)].png</texture>
       <colordiffuse>Overlay</colordiffuse>
     </control>	
+   </control>
 	
 	
 	

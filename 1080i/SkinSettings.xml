@@ -457,6 +457,13 @@
 					<selected>Skin.HasSetting(_HideMusicPlayerFanart)</selected>
 					<radioposx>1210</radioposx>
 				</control>
+				<control type="radiobutton" id="3702" description="Disable BG video">
+					<include>SkinSettingsButton</include>
+					<label>$LOCALIZE[24021] [LOWERCASE]$LOCALIZE[33068][/LOWERCASE] $LOCALIZE[36912]</label>
+					<onclick>Skin.ToggleSetting(BGvideoOff)</onclick>
+					<selected>Skin.HasSetting(BGvideoOff)</selected>
+					<radioposx>1210</radioposx>
+				</control>
 				<control type="button" id="3720" description="Reset section">
 					<include>SkinSettingsButton</include>
 					<label>$LOCALIZE[31117]</label>
